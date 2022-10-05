@@ -1,0 +1,37 @@
+body{
+    background-color: aqua;
+    color: rgb(70, 8, 255);
+    font-size: 21;
+
+    background-image: url(../images/walter.jpeg);
+    background-size: auto;
+    background-position: center;
+
+    /*Styling text*/
+    font-family: sans-serif;
+}
+h1{
+    font-size: 70px;
+}
+p{
+    color: #254c5c;
+}
+
+/*CSS BOX MODEL*/
+/*
+Margin:
+    Padding:
+        Border: 
+*/
+.box{ 
+    background-repeat: no-repeat;
+    background-color: rgb(231, 11, 165);
+    width: 300px;
+
+    padding: 200px 100px;
+
+    margin: 100px;
+    border-width: 5px;
+    border-color: red;
+    border-style: solid;
+}
