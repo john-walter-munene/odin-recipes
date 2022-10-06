@@ -1,0 +1,94 @@
+body{
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    font-family: "Quattrocento Sans";
+
+    text-align: center;
+    text-transform: capitalize;
+}
+p{
+    color: rgba(0, 241, 48, 0.819);
+
+    margin-top: 0px;
+
+    line-height: 1.25;
+
+    font-size: 25;
+    font-weight: lighter;
+}
+.intro{
+    font-size: 28px;
+    color: brown;
+}
+.location{
+    background-color: cornflowerblue;
+}
+.tech-color{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1{
+    font-size: 71;
+    font-family: Arial, Helvetica, sans-serif;
+    color: deeppink;
+    margin-bottom: 0px;
+}
+
+span{
+    color: yellowgreen;
+    font-size: 40px;
+}
+.top-section{
+    background-color: rgb(0, 223, 104);
+}
+.bottom-section{
+    background-color: rgb(253, 0, 51);
+}
+/* I am now styling my links*/
+a:link{
+    color: crimson;
+}
+a:hover{
+    color: blueviolet;
+}
+a:visited{
+    color: rgb(247, 4, 214);
+}
+a:active{
+    color: deeppink;
+}
+/*Using CSS Selectors*/
+p, h1{
+    color: magenta;
+}
+
+.body-text{
+    background-color: rgb(44, 38, 39);
+    padding: 50px;
+}
+
+.body-text p{
+    color: rgb(255, 0, 136);
+}
+.body-text a{
+    color: yellowgreen;
+}
+.body-text a:hover{
+    color: blueviolet;
+}
+.important-link, .body-text .important-link{
+    color: cornflowerblue;
+}
+ol{
+    list-style-type: disc;
+    list-style-position: inside;
+    text-align: center;
+    background-color: crimson;
+    padding: 50px;
+}
+.container{
+    background-color: white;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
