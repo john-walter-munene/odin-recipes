@@ -1,0 +1,23 @@
+/*Classes*/
+.class{
+    color: black;
+    background-color: rgb(253, 127, 190);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.class-cool{
+    color: black;
+    background-color: rgb(253, 48, 89);
+    font-size: 20px;
+}
+/*ids*/
+#one{
+    color: blue;
+    background-color: white;
+    font-size: 18px;
+}
+#two{
+    color: black;
+    font-size: 18px;
+    background-color: rgb(86, 222, 86);
+}
