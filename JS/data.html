@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        const name = "Chris";
+        const greeting = `Hello, ${name}`;
+        console.log(greeting); // "Hello, Chris"
+
+        const person = "Mike "
+        const salutation = ", how are you doing sire?"
+        const salutePerson = `${person}${salutation}`
+        alert(salutePerson)
+
+        // Concatenation being used in action, Huh I love JavaScript
+        const button = document.querySelector("button");
+
+        function greet() {
+        const name = prompt("What is your name?");
+        alert(`Hello ${name}, nice to see you!`);
+        }
+
+        button.addEventListener("click", greet);
+
+        //Including expressions in strings
+        const song = "Fight the Youth";
+        const score = 9;
+        const highestScore = 10;
+        const output = `I like the song ${song}. I gave it a score of ${
+        (score / highestScore) * 100
+        }%.`;
+        
+        console.log(output); // "I like the song Fight the Youth. I gave it a score of 90%."
+    </script>
+    <title></title>
+</head>
+  <body>
+    <button>Press me</button>
+  </body>
+</html>
