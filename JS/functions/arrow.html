@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Function library example</title>
+  <style>
+    input {
+      font-size: 2em;
+      margin: 10px 1px 0;
+    }
+  </style>
+  </head>
+<body>
+
+  <input class="numberInput" type="text">
+  <p></p>
+
+  <script>
+    // let func = (arg1, arg2, ..., argN) => expression;
+    let func = function(arg1, arg2, ... argN) {
+                    return expression;
+                };
+    let sum = (a, b) => a + b;
+
+    /* This arrow function is a shorter form of:
+
+        let sum = function(a, b) {
+            return a + b;
+        };
+    */
+
+alert( sum(1, 2) ); // 3
+  </script>
+</body>
+</html>

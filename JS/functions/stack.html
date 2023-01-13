@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Function scope example</title>
+  </head>
+<body>
+
+  <script>
+    function add(a, b) {
+        return a + b;
+    }
+
+    function average(a, b) {
+        return add(a, b) / 2;
+    }
+
+    let x = average(10, 20);
+  </script>
+</body>
+</html>

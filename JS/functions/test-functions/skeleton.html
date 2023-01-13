@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Page Title</title>
+</head>
+<body>
+  <script>
+    // Your JavaScript goes here!
+    console.log("Hello, World!")
+
+    function add7(number){
+        number += 7
+        console.log( `The new number is ${number}`)
+    }
+
+    add7(1)
+
+    function multipy(num1, num2){
+        multiplication = num1*num2
+        console.log(`The multiplication is: ${multiplication}`)
+    }
+
+    multipy(10, 20)
+
+    function capitalize(text=''){
+        const arr = text.split("")
+        //loop through each element of the array and capitalize the first letter.
+        for (var i = 0; i < arr.length; i++) {
+            arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+        }
+        const str2 = arr.join(" ");
+        console.log(str2);
+    }
+
+    capitalize("i am a programmer")
+
+    function lastLetter(text){
+        console.log(text.charAt(-1))
+    }
+    lastLetter('abcd')
+  </script>
+</body>
+</html>
