@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Code Bro</title>
+</head>
+<body>
+  <script>
+    // Your JavaScript goes here!
+    // Calculating squares
+    const results = document.querySelector('#results');
+
+    function calculate() {
+      for (let i = 1; i < 10; i++) {
+        const newResult = `${i} x ${i} = ${i * i}`;
+        results.textContent += `${newResult}\n`;
+      }
+      results.textContent += '\nFinished!';
+    }
+
+    const calculateBtn = document.querySelector('#calculate');
+    const clearBtn = document.querySelector('#clear');
+
+    calculateBtn.addEventListener('click', calculate);
+    clearBtn.addEventListener('click', () => results.textContent = '');
+
+  </script>
+</body>
+</html>
