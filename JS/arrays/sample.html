@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p id="demo"></p>
+<p id="trial"></p>
+
+<script>
+    // An array ia a special variable that can hold more than one value.
+    const cars = ["Saab", "Volvo", "BMW"];
+    /*You can also create an array, and then provide the elements:*/
+    cars[3] = "Crown"
+    document.getElementById("demo").innerHTML = cars;
+
+    // You can access array elemts by index.
+    car = cars[3]
+    // alert(car)
+
+    // Array elemnts can be objects.
+    // myArray = []
+    // myArray[0] = Date.now;
+    // myArray[1] = myFunction;
+    // myArray[2] = myCars;
+
+    // console.log(myArray)
+
+    // Array properties.
+    cars.length   // Returns the number of elements
+    cars.sort()   // Sorts the array
+
+    // Accessing the Last Array Element
+
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    let fruit = fruits[fruits.length - 1];
+    // alert(fruit)
+
+    // Looping through array elements. 
+    const fruitsTwo = ["Banana", "Orange", "Apple", "Mango"];
+    let fLen = fruits.length;
+
+    let text = "<ul>";
+    for (let i = 0; i < fLen; i++) {
+    text += "<li>" + fruitsTwo[i] + "</li>";
+    }
+    text += "</ul>";
+    // document.getElementById("trial").innerHTML = text;
+
+    // Adding array elements.
+    fruitsTwo.push("Lemon");  // Adds a new element (Lemon) to fruits
+    document.getElementById("trial").innerHTML = text;
+
+    // ARRAY METHODS.
+    const myGirls = ["Cecilie", "Lone"];
+    const myBoys = ["Emil", "Tobias", "Linus"];
+
+    const myChildren = myGirls.concat(myBoys);
+    console.log(myChildren)
+</script>
+
+</body>
+</html>
