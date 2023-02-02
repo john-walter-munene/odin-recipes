@@ -19,7 +19,7 @@ heading_3.classList.add('content')
 heading_3.textContent = "I'm blue h3"
 container.appendChild(heading_3)
 heading_3.style.cssText = 'color: blue;';
-
+ 
 const pinkBox = document.createElement('div')
 
 const heading_1 = document.createElement('h1')
