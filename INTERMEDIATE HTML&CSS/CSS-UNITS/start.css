@@ -1,0 +1,21 @@
+h1 {
+    color: black;
+    background-color: rgb(197, 93, 161);
+}
+
+.wrapper {
+    font-size: 1em;
+}
+
+.px {   
+    width: 200px;
+}
+
+.vw {
+    width: 10vw;
+}
+
+.em {
+    width: 10em;
+}
+   
