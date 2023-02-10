@@ -1,0 +1,28 @@
+#box{
+    border:10px solid #000;
+    border-radius: 10px 40px 40px 10px;
+    width: 200px;
+    height: 100px;
+    background-color:#ccc;
+}
+#box-2{
+    border: groove 1em red;  
+    border-radius: 2em;
+    width: 200px;
+    height: 100px;
+    background-color:#ccc;
+}
+.box{
+    background: gold;
+    border: ridge gold;
+    border-radius: 13em/3em;
+    width: 200px;
+    height: 100px;
+}
+.box-1{
+    background: gold;
+    border: none;
+    border-radius: 50%; 
+    width: 200px;
+    height: 100px;
+}
