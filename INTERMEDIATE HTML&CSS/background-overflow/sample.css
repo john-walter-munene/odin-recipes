@@ -1,0 +1,145 @@
+@import "compass/css3";
+
+$picture_url: 'https://unsplash.imgix.net/photo-1419064642531-e575728395f2?q=75&fm=jpg&s=490dffe2e11f468947891ab40651e176';
+
+body {
+  font-family: Avenir Next;
+  text-align: center;
+  min-width: 300px;
+}
+
+ul {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: transform 200ms linear;
+  display: flex;
+  justify-content: center;
+  max-width: 800px;
+  min-width: 300px;
+  margin: 0 auto;
+
+  &.left-selected {
+    transform: translateX(19.8%);
+  }
+  &.right-selected {
+    transform: translateX(-19.8%);
+  }
+}
+
+.options__first {
+  font-size: 1.1em;
+  li {
+    color: white;
+    height: 125px;
+    width: 125px;
+    margin: 8px 16px;
+    background: #0081B6;
+    cursor: pointer;
+    line-height: 125px;
+  }
+  .option__image {
+    background: url($picture_url);
+    background-size: cover;
+  }
+  .option__gradient {
+    background-image: linear-gradient(#002E4B, #0081B6);
+  }
+  .option__radial {
+    background-image: radial-gradient(80% 40%, #002E4B, #0081B6);
+  }
+  .option__striped {
+    background: linear-gradient(#002E4B 55%, #0081B6 55%);
+  }
+  .option__positioned {
+    background-position: top right;
+  }
+  .option__repeating {
+    background: linear-gradient(#002E4B 50%, #0081B6 50%);
+    background-size: 100% 50px;
+    background-position: 0 35px;
+  }
+  .option__sprite {
+    background: none;
+    color: #0081B6;
+    line-height: 110px;
+    &:after {
+      content: '';
+      height: 50px;
+      width: 50px;
+      background: url($picture_url);
+      background-size: 200px auto;
+      background-position: 30% 40%;
+      display: block;
+      position: absolute;
+      bottom: 8px;
+      left: 27.4%;
+      z-index: -1;
+    }
+  }
+  .image__repeating {
+    background-size: auto 32%;
+  }
+  .option__multiple {
+    background: url('https://ununsplash.imgix.net/uploads/141202616623001715bb7/c1b3b9b0?q=75&fm=jpg&s=07faf9fb6409579bda59881970b284d1'), url($picture_url);
+    background-size: 210%, 200%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 145% 0, 0 0;
+  }
+  .image__opacity {
+    position: relative;
+    z-index: 1;
+    background: white;
+    &:after {
+      content: '';
+      background: url('https://unsplash.imgix.net/photo-1419064642531-e575728395f2?q=75&fm=jpg&s=490dffe2e11f468947891ab40651e176');
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: block;
+      opacity: 0.5;
+      z-index: -1;
+    }
+  }
+  .option__name {
+    background: rebeccapurple;
+  }
+  .option__opacity {
+    background: rgba(0, 129, 182, 0.7);
+  }
+}
+
+.options__second {
+  display: flex;
+  margin: 32px 0;
+  width: 500%;
+  left: -200%;
+  max-width: 1000px;
+}
+.hidden {
+  display: none;
+}
+.hide {
+  opacity: 0;
+}
+
+pre {
+  text-align: left;
+  background: #333538;
+  padding: 24px;
+  border-radius: 4px;
+  box-shadow: 0 0 2px #111 inset;
+  margin-top: 200px;
+  color: white;
+  font-size: 2em;
+  overflow-x: auto;
+  transition: opacity 200ms linear;
+}
+
+.debug {
+  margin-top: -8px;
+}

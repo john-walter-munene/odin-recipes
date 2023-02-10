@@ -1,0 +1,16 @@
+body {
+    background:
+       url(sweettexture.jpg)    /* image */
+       top center / 200px 200px /* position / size */
+       no-repeat                /* repeat */
+       fixed                    /* attachment */
+       padding-box              /* origin */
+       content-box              /* clip */
+       red;                     /* color */
+  }
+
+/* When using multiple backgrounds.*/
+body {
+    background: url(sweettexture.jpg), url(texture2.jpg) black;
+    background-repeat: repeat-x, no-repeat;
+}
