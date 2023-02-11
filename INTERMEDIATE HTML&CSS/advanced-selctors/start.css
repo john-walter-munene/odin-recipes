@@ -1,0 +1,31 @@
+/*Child and grandchild inside main div.*/
+
+main div {
+    /* Our cool CSS */
+    color: aliceblue;
+  }
+
+  * This rule will only select divs with a class of child */
+  main > div {
+    /* Our cool CSS */
+  }
+  
+  /* This rule will only select divs with a class of grand-child */
+  main > div > div {
+    /* More cool CSS */
+  }
+
+  /* This rule will only select the div with the class child group2 */
+.group1 + div {
+    /* Our cool CSS */
+  }
+  
+  /* This rule will only select the div with the class child group3 */
+  .group1 + div + div {
+    /* More cool CSS */
+  }
+
+  /* This rule will select all of .group1's siblings - in this case the 2nd and 3rd .child divs */
+.group1 ~ div {
+    /* Our cool CSS */
+  }

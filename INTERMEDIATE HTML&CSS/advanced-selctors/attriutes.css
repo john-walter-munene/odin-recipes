@@ -1,0 +1,35 @@
+[src] {
+    /* This will target any element that has a src attribute. */
+  }
+
+  img[src] {
+    /* This will only target img elements that have a src attribute. */
+  }
+
+  img[src="puppy.jpg"] {
+    /* This will target img elements with a src attribute that is exactly "puppy.jpg" */
+  }
+
+  [class^='aus'] {
+    /* Classes are attributes too!
+      This will target any class that begins with 'aus':
+      class='austria'
+      class='australia'
+    */
+  }
+  
+  [src$='.jpg'] {
+    /* This will target any src attribute that ends in '.jpg':
+    src='puppy.jpg'
+    src='kitten.jpg'
+    */
+  }
+  
+  [for*='ill'] {
+    /* This will target any for attribute that has 'ill' anywhere inside it:
+    for="bill"
+    for="jill"
+    for="silly"
+    for="ill"
+    */
+  }
