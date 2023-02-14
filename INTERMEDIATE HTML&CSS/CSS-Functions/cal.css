@@ -1,0 +1,26 @@
+.colors {
+    --base-hue: 140;
+    --saturation: 95%;
+    --lightness: 80%;
+    --rotation: 60;
+  
+    color: #222;
+    text-align: center;
+  }
+  
+  .color {
+    padding: 0.25rem;
+    background-color: hsl(var(--hue), var(--saturation), var(--lightness));
+  }
+  
+  .color1 {
+    --hue: calc(var(--base-hue));
+  }
+  
+  .color2 {
+    --hue: calc(var(--base-hue) + var(--rotation));
+  }
+  
+  .color3 {
+    --hue: calc(var(--base-hue) + var(--rotation) * 2);
+  }
