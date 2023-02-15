@@ -1,0 +1,18 @@
+.error-modal{
+    --color-error-text: red;
+    --modal-border: 1px solid black;
+    --modal-font-size: calc(2rem + 5vw);
+
+    color: var(--color-error-text);
+    border: var(--modal-border);
+    font-size: var(--modal-font-size);
+
+}
+
+/*Fall back values.*/
+.fall-back{
+    --color-text: white;
+
+    background-color: var(--undeclared-property, black);
+    color: var(--undeclared-property, var(--color-text, yellow));
+}
