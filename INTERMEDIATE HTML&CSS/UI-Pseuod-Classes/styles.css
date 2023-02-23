@@ -1,0 +1,19 @@
+input[type="text"]:disabled {
+    background: #eee;
+    border: 1px solid #ccc;
+  }
+  
+  .disabled-label {
+    color: #aaa;
+  }
+  :is(input:read-only, input:-moz-read-only, textarea:-moz-read-only, textarea:read-only) {
+    border: 0;
+    box-shadow: none;
+    background-color: white;
+  }
+  
+  :is(textarea:-moz-read-write, textarea:read-write) {
+    box-shadow: inset 1px 1px 3px #ccc;
+    border-radius: 5px;
+  }
+  
