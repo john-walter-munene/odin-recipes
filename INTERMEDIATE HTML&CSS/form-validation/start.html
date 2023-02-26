@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Validation</title>
+    <link rel="stylesheet" href="start.css">
+</head>
+<body>
+    <!--Validation using required-->
+    <h2>Validation using required.</h2>
+    <form action="#" method="get">
+        <div>
+          <label for="user_email">*Email:</label>
+          <input type="email" id="user_email" name="user_email" required>
+        </div>
+        <br>
+      
+        <div>
+          <label for="user_password">*Password:</label>
+          <input type="password" id="user_password" name="user_password" required>
+        </div>
+      
+        <button type="submit">Login</button>
+      </form> 
+      <br>
+
+      <!--Validation with min-length.-->
+      <h2>Min-length validations.</h2>
+      <form action="#" method="get">
+        <div>
+          <textarea placeholder="What's happening?" minlength="3"></textarea>
+        </div>
+        
+        <button type="submit">Tweet</button>
+      </form>
+    <br>
+
+      <!--Maximum length validation.-->
+      <h2>Max-Lenth Validation</h2>
+      <form action="#" method="get">
+        <div>
+          <textarea placeholder="What's happening?" maxlength="20"></textarea>
+        </div>
+      
+        <button type="submit">Tweet</button>
+      </form>
+      <br>
+
+      <!--Combning validations.-->
+      <h2> Combining Validations.</h2>
+      <form action="#" method="get">
+        <div>
+          <textarea placeholder="What's happening?" minlength="5" maxlength="20"></textarea>
+        </div>
+        
+        <button type="submit">Tweet</button>
+      </form>
+      <br>
+
+      <!--Number range validations.-->
+      <h2>Number Range validation</h2>
+      <h3>Min</h3>
+      <form action="#" method="get">
+        <div>
+          <label for="quantity">Quantity</label>
+        </div>
+        <input type="number" id="quantity" name="quantity" min="1" value="0">
+        
+        <div>
+          <button type="submit">Place Order</button>
+        </div>
+      </form>
+      <form action="#" method="get">
+        <div>
+          <label for="passengers">Passengers</label>
+        </div>
+        <input type="number" id="passengers" name="passengers" max="5" value="0">
+         
+        <div>
+          <button type="submit">Book</button>
+        </div>
+      </form>
+      <br>
+      <h3>Max</h3>
+</body>
