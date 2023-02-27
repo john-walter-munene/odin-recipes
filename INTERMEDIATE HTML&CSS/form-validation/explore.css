@@ -1,0 +1,6 @@
+.help { display: none; }
+.invalid .help { display: block; }
+.invalid label, .invalid input, .invalid .help {
+  color: red;
+  border-color: red;
+}
