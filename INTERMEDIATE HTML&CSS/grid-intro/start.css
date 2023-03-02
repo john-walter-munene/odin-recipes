@@ -1,0 +1,19 @@
+.flex-container{
+    display: flex;
+}
+.flex-container div{
+    background: peachpuff;
+  border: 4px solid brown;
+  height: 100px;
+  flex: 1;
+}
+.flex-container-2{
+    display: flex;
+    flex-direction: column;
+}
+.flex-container-2 div {
+    background: peachpuff;
+    border: 4px solid brown;
+    height: 80px;
+    flex: 1 1 auto;
+  }
