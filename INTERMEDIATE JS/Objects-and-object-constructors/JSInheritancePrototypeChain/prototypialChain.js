@@ -71,4 +71,4 @@ const charlie = new Dog('Charlie', 10, 'Goldendoodle')
 
 // Checking the constructor.
 console.log(charlie.constructor)
-Dog.prototype.constructor = Dog
+
