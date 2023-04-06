@@ -104,7 +104,7 @@ const obj = {
     },
   };
   
-  let copy = Object.assign({}, obj);
+let copy = Object.assign({}, obj);
   console.log(copy);
   // { foo: 1, bar: 2 }
   // The value of copy.bar is obj.bar's getter's return value.
