@@ -1,3 +1,3 @@
 import { getPrimes } from "./getPrimes.js";
 
-console.log(getPrimes(10));
+console.log(getPrimes(15));
