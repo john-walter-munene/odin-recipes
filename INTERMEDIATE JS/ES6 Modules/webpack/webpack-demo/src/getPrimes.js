@@ -2,7 +2,7 @@
 /**
  * Returns a list of prime numbers that are smaller than `max`.
  */
-export function getPrimes(max) {
+ export function getPrimes(max) {
     const isPrime = Array.from({ length: max }, () => true);
     isPrime[0] = isPrime[1] = false;
     isPrime[2] = true;
@@ -17,4 +17,3 @@ export function getPrimes(max) {
       .filter(([, isPrime]) => isPrime)
       .map(([number]) => number);
   }
-  
